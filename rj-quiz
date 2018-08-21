@@ -1,0 +1,29 @@
+userScore = 0
+question1 = input("True or False: the term 'reproductive justice' was created by Loretta Ross. Please enter 'T' for true or 'F' for false!")
+if question1 == 'T':
+    userScore = userScore + 1
+    print("Correct! You gained a point!")
+else:
+    print("Sorry, that's not correct.")
+question2 = input("True or False: Only women have abortions. Please enter 'T' for true or 'F' for false!")
+if question2 == 'F':
+    userScore = userScore + 1
+    print("Correct! You gained a point!")
+else:
+    print("Sorry, that's not correct.")
+question3 = input("True or False: police brutality is a reproductive justice issue. Please enter 'T' for true or 'F' for false!")
+if question3 == 'T':
+    userScore = userScore + 1
+    print("Correct! You gained a point!")
+else:
+    print("Sorry, that's not correct.")
+print("That's the end of the quiz. Your final score is...")
+print(userScore)
+if userScore == 3:
+    print("You got the highest score possible! Congrats!")
+elif userScore == 2:
+    print("It looks like you got one question wrong. It's great to see what you've learned about reproductive justice, but there's always more to learn!")
+elif userScore == 1:
+    print("You might want to learn more about reproductive justice and how it's different from white pro-choice feminism!")
+elif userScore == 0:
+    print("You should definitely learn more about reproductive justice and how it's different from white pro-choice feminism!")
